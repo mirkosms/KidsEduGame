@@ -1,0 +1,6 @@
+﻿  RomanDigitalsToDecimal.cpp
+C:\Users\HP\KidsEduGame\KidsEduGame\RomanDigitalsToDecimal\RomanDigitalsToDecimal.cpp(126,16): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\HP\KidsEduGame\KidsEduGame\RomanDigitalsToDecimal\RomanDigitalsToDecimal.cpp(152,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  Dec2Roman.cpp
+  Generowanie kodu...
+  RomanDigitalsToDecimal.vcxproj -> C:\Users\HP\KidsEduGame\KidsEduGame\x64\Debug\RomanDigitalsToDecimal.exe
