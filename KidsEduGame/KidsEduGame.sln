@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RomanDigitalsToDecimal", "src\RomanDigitalsToDecimal.vcxproj", "{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameCore", "src\GameCore.vcxproj", "{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestForRoman2Decimal", "test\TestForRoman2Decimal.vcxproj", "{5A200625-1864-41CC-B644-0942C56B794C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameTests", "test\GameTests.vcxproj", "{5A200625-1864-41CC-B644-0942C56B794C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

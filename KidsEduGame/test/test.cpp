@@ -1,4 +1,3 @@
-//#include "pch.h"
 #include <gtest/gtest.h>
 #include <Dec2Roman.h>
 TEST(TestConvertDecimal_2_Roman, TestValidDecimalNumbers) {
