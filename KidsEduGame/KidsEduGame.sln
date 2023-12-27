@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RomanDigitalsToDecimal", "RomanDigitalsToDecimal\RomanDigitalsToDecimal.vcxproj", "{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RomanDigitalsToDecimal", "src\RomanDigitalsToDecimal.vcxproj", "{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestforRoman2Decimal", "TestforRoman2Decimal\TestforRoman2Decimal.vcxproj", "{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestForRoman2Decimal", "test\TestForRoman2Decimal.vcxproj", "{5A200625-1864-41CC-B644-0942C56B794C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}.Release|x64.Build.0 = Release|x64
 		{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}.Release|x86.ActiveCfg = Release|Win32
 		{775792F2-86E0-4296-BDC5-6AA5C2D5E0DE}.Release|x86.Build.0 = Release|Win32
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Debug|x64.ActiveCfg = Debug|x64
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Debug|x64.Build.0 = Debug|x64
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Debug|x86.ActiveCfg = Debug|Win32
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Debug|x86.Build.0 = Debug|Win32
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Release|x64.ActiveCfg = Release|x64
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Release|x64.Build.0 = Release|x64
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Release|x86.ActiveCfg = Release|Win32
-		{BFC7EE27-22FB-4C72-BC79-B3489637F4B6}.Release|x86.Build.0 = Release|Win32
+		{5A200625-1864-41CC-B644-0942C56B794C}.Debug|x64.ActiveCfg = Debug|x64
+		{5A200625-1864-41CC-B644-0942C56B794C}.Debug|x64.Build.0 = Debug|x64
+		{5A200625-1864-41CC-B644-0942C56B794C}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A200625-1864-41CC-B644-0942C56B794C}.Debug|x86.Build.0 = Debug|Win32
+		{5A200625-1864-41CC-B644-0942C56B794C}.Release|x64.ActiveCfg = Release|x64
+		{5A200625-1864-41CC-B644-0942C56B794C}.Release|x64.Build.0 = Release|x64
+		{5A200625-1864-41CC-B644-0942C56B794C}.Release|x86.ActiveCfg = Release|Win32
+		{5A200625-1864-41CC-B644-0942C56B794C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
