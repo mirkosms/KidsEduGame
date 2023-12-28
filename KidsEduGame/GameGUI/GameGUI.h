@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_GameGUI.h"
+#include "RomanConverter.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GameGUIClass; };
@@ -17,4 +18,10 @@ public:
 
 private:
     Ui::GameGUIClass *ui;
+    RomanConverter converter;
+
+private slots:
+    void on_convert2DecimalClicked();
+    void on_convert2RomanClicked();
+
 };

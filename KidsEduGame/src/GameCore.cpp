@@ -1,61 +1,14 @@
-﻿// RomanDigitalsToDecimal.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <string>
 #include <map>
 #include <algorithm>
+#include <ctime>
+#include <climits>
 #include "Dec2Roman.h"
+#include "RomanConverter.h"
 
 using namespace std;
-
-
-class RomanConverter {
-private:
-    map<char, int> roman_map = { {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000} };
-    string valid_subtractors = "IXC";
-    string non_repeatable = "VLD";
-public:
-
-    bool isValidRoman(string roman) {
-        for (int i = 0; i < roman.length(); i++) {
-            if (roman_map[roman[i]] < roman_map[roman[i + 1]]) {
-                if (valid_subtractors.find(roman[i]) == string::npos || roman_map[roman[i]] * 10 < roman_map[roman[i + 1]]) {
-                    return false;
-                }
-                if (i + 2 < roman.length() && roman_map[roman[i + 1]] <= roman_map[roman[i + 2]]) {
-                    return false;
-                }
-            }
-            if (i + 3 < roman.length() && roman[i] == roman[i + 1] && roman[i + 1] == roman[i + 2] && roman[i + 2] == roman[i + 3]) {
-                return false;
-            }
-            if (non_repeatable.find(roman[i]) != string::npos && i + 1 < roman.length() && roman[i] == roman[i + 1]) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    int Roman2Dec(string roman) {
-        if (!isValidRoman(roman)) {
-            return -1;
-        }
-        int decimal = 0;
-        int prev = 0;
-
-        for (int i = roman.length() - 1; i >= 0; --i) {
-            if (roman_map[roman[i]] >= prev)
-                decimal += roman_map[roman[i]];
-            else
-                decimal -= roman_map[roman[i]];
-
-            prev = roman_map[roman[i]];
-        }
-
-        return decimal == 0 ? -1 : decimal;
-    }
-};
 
 class Facts {
 public:
