@@ -1,40 +1,50 @@
 #include "Quiz.h"
-#include <iostream>
-#include <map>
 #include <cstdlib>
 #include <ctime>
 
-void Quiz::start() const {
-    srand(static_cast<unsigned>(time(nullptr)));
-    std::map<int, std::string> questions = {
+Quiz::Quiz() : score(0), currentQuestionIndex(0) {
+    srand(static_cast<unsigned int>(time(nullptr)));
+    // Inicjalizacja pytañ
+    questions = {
         {1, "I"}, {4, "IV"}, {9, "IX"}, {58, "LVIII"}, {1994, "MCMXCIV"},
         {3, "III"}, {20, "XX"}, {90, "XC"}
     };
+    answeredCorrectly.resize(questions.size(), false); // Inicjalizacja wektora odpowiedzi na false
+}
 
-    for (const auto& [dec, roman] : questions) {
-        std::string userAnswer;
-        int questionType = rand() % 2;
+void Quiz::start() {
+    resetQuiz(); // Resetujemy quiz i zaczynamy od pierwszego pytania
+}
 
-        if (questionType == 0) {
-            std::cout << "Jaka jest liczba rzymska dla " << dec << "? ";
-            std::cin >> userAnswer;
-            if (userAnswer == roman) {
-                std::cout << "Poprawna odpowiedz!\n";
-            }
-            else {
-                std::cout << "Nieprawidlowa odpowiedŸ. Poprawna odpowiedz to: " << roman << "\n";
-            }
-        }
-        else {
-            std::cout << "Jaka jest liczba dziesietna dla '" << roman << "'? ";
-            int userIntAnswer;
-            std::cin >> userIntAnswer;
-            if (userIntAnswer == dec) {
-                std::cout << "Poprawna odpowiedz!\n";
-            }
-            else {
-                std::cout << "Nieprawidlowa odpowiedz. Poprawna odpowiedz to: " << dec << "\n";
-            }
+std::pair<int, std::string> Quiz::getNextQuestion() {
+    if (currentQuestionIndex < questions.size()) {
+        return questions[currentQuestionIndex++]; // Zwraca bie¿¹ce pytanie i zwiêksza indeks
+    }
+    return { -1, "" }; // Jeœli pytania siê skoñczy³y
+}
+
+bool Quiz::checkAnswer(const std::string& userAnswer) {
+    if (currentQuestionIndex > 0 && currentQuestionIndex <= questions.size() && !answeredCorrectly[currentQuestionIndex - 1]) {
+        const auto& [correctDec, correctRoman] = questions[currentQuestionIndex - 1];
+        if (userAnswer == correctRoman || std::to_string(correctDec) == userAnswer) {
+            score++;
+            answeredCorrectly[currentQuestionIndex - 1] = true; // Oznaczamy pytanie jako poprawnie zaliczone
+            return true;
         }
     }
+    return false;
+}
+
+size_t Quiz::getCurrentQuestionIndex() const {
+    return currentQuestionIndex;
+}
+
+int Quiz::getScore() const {
+    return score;
+}
+
+void Quiz::resetQuiz() {
+    score = 0;
+    currentQuestionIndex = 0;
+    std::fill(answeredCorrectly.begin(), answeredCorrectly.end(), false); // Resetujemy flagi odpowiedzi na false
 }

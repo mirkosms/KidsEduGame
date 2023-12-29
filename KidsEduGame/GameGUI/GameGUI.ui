@@ -6,91 +6,200 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
-    <height>400</height>
+    <width>658</width>
+    <height>451</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>GameGUI</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLineEdit" name="lineEditRoman">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>100</y>
-      <width>121</width>
-      <height>21</height>
+      <x>30</x>
+      <y>10</y>
+      <width>521</width>
+      <height>361</height>
      </rect>
     </property>
-    <property name="placeholderText">
-     <string>Wpisz liczbę rzymską</string>
+    <property name="styleSheet">
+     <string notr="true">background-color: yellow;</string>
     </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEditDecimal">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>100</y>
-      <width>131</width>
-      <height>21</height>
-     </rect>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-    <property name="placeholderText">
-     <string>Wpisz liczbę dziesiętną</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonConvert2Decimal">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>150</y>
-      <width>141</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Konwertuj na dziesiętne</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButtonConvert2Roman">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>150</y>
-      <width>131</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Konwertuj na rzymskie</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelDecimalResult">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>220</y>
-      <width>49</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelRomanResult">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>220</y>
-      <width>49</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
+    <widget class="QWidget" name="Konwersja">
+     <attribute name="title">
+      <string>Konwersja</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEditRoman">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Wpisz liczbę rzymską</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonConvert2Decimal">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>141</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konwertuj na dziesiętne</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditDecimal">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>60</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Wpisz liczbę dziesiętną</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonConvert2Roman">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>90</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konwertuj na rzymskie</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRomanResult">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>140</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelDecimalResult">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Quiz">
+     <attribute name="title">
+      <string>Quiz</string>
+     </attribute>
+     <widget class="QLabel" name="labelQuestion">
+      <property name="geometry">
+       <rect>
+        <x>28</x>
+        <y>20</y>
+        <width>281</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pytanie</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditAnswer">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Wpisz odpowiedź</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="submitAnswerButton">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>130</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Odpowiedz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelFeedback">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>190</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Poprawnosc</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelScore">
+      <property name="geometry">
+       <rect>
+        <x>358</x>
+        <y>20</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wynik</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="startQuizButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Strona</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -98,7 +207,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>656</width>
+     <width>658</width>
      <height>22</height>
     </rect>
    </property>
