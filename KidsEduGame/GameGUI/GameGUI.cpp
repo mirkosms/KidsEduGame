@@ -8,7 +8,6 @@ GameGUI::GameGUI(QWidget* parent)
     connect(ui->pushButtonConvert2Decimal, SIGNAL(clicked()), this, SLOT(on_convert2DecimalClicked()));
     connect(ui->pushButtonConvert2Roman, SIGNAL(clicked()), this, SLOT(on_convert2RomanClicked()));
 
-    // Nowe po≥πczenia dla quizu
     connect(ui->startQuizButton, SIGNAL(clicked()), this, SLOT(on_startQuizButton_clicked()));
     connect(ui->submitAnswerButton, SIGNAL(clicked()), this, SLOT(on_submitAnswerButton_clicked()));
 
@@ -43,29 +42,29 @@ void GameGUI::on_startQuizButton_clicked() {
 void GameGUI::on_submitAnswerButton_clicked() {
     QString userAnswer = ui->lineEditAnswer->text();
     bool isCorrect = quiz.checkAnswer(userAnswer.toStdString()); // Sprawdü odpowiedü
+    qDebug() << "isCorrect value:" << isCorrect;
 
     // Ustaw tekst w zaleønoúci od poprawnoúci odpowiedzi
-    ui->labelFeedback->setText(isCorrect ? "Dobrze!" : "Niepoprawnie.");
+    ui->labelFeedback->clear();  // WyczyúÊ obecny stan
+    ui->labelFeedback->setText(isCorrect ? "Dobrze!" : "Zle.");
     ui->labelFeedback->setStyleSheet(isCorrect ? "color: green;" : "color: red;"); // Ustaw kolor na zielony lub czerwony
 
     if (isCorrect) {
         updateScoreDisplay(); // Aktualizuj wynik tylko jeúli odpowiedü jest poprawna
     }
 
-    // Wy≥πcz przyciski, aby uniknπÊ ponownego klikniÍcia
+    feedbackTimer->start();
     ui->submitAnswerButton->setEnabled(false);
     ui->startQuizButton->setEnabled(false);
-
-    // Rozpocznij odliczanie do przejúcia do nastÍpnego pytania lub zakoÒczenia quizu
-    feedbackTimer->start();
+    
 }
 
 void GameGUI::proceedToNextQuestion() {
     feedbackTimer->stop();  // Zatrzymaj timer
+    ui->labelFeedback->clear(); // WyczyúÊ komunikat o poprawnoúci
     displayNextQuestion();  // Przejdü do nastÍpnego pytania lub zakoÒcz quiz
     ui->submitAnswerButton->setEnabled(true); // Ponownie w≥πcz przycisk
-    ui->startQuizButton->setEnabled(true); // Ponownie w≥πcz przycisk startu quizu
-    ui->labelFeedback->clear(); // WyczyúÊ komunikat o poprawnoúci
+    
 }
 
 void GameGUI::displayNextQuestion() {
@@ -74,12 +73,14 @@ void GameGUI::displayNextQuestion() {
         QString questionText = QString("Jaka jest liczba dziesietna dla rzymskiej '%1'?").arg(QString::fromStdString(questionPair.second));
         ui->labelQuestion->setText(questionText);
         ui->lineEditAnswer->clear();
-        ui->labelFeedback->clear(); // WyczyúÊ komunikat o poprawnoúci
+        ui->labelFeedback->clear();
     }
     else {
         ui->labelQuestion->setText("Koniec quizu!");
         ui->submitAnswerButton->setEnabled(false);
         ui->startQuizButton->setEnabled(true);
+        ui->labelFeedback->clear();
+        ui->lineEditAnswer->clear();
         ui->labelFeedback->clear();
     }
 }

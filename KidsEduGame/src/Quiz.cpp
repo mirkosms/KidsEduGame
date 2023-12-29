@@ -24,13 +24,14 @@ std::pair<int, std::string> Quiz::getNextQuestion() {
 }
 
 bool Quiz::checkAnswer(const std::string& userAnswer) {
-    if (currentQuestionIndex > 0 && currentQuestionIndex <= questions.size() && !answeredCorrectly[currentQuestionIndex - 1]) {
+    if (currentQuestionIndex > 0 && currentQuestionIndex <= questions.size()) {
         const auto& [correctDec, correctRoman] = questions[currentQuestionIndex - 1];
-        if (userAnswer == correctRoman || std::to_string(correctDec) == userAnswer) {
+        bool isCorrect = (userAnswer == correctRoman || std::to_string(correctDec) == userAnswer);
+        if (isCorrect && !answeredCorrectly[currentQuestionIndex - 1]) {
             score++;
-            answeredCorrectly[currentQuestionIndex - 1] = true; // Oznaczamy pytanie jako poprawnie zaliczone
-            return true;
+            answeredCorrectly[currentQuestionIndex - 1] = true;
         }
+        return isCorrect;
     }
     return false;
 }
