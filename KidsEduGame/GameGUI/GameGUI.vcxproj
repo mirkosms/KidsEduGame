@@ -103,6 +103,9 @@
     <QtUic Include="GameGUI.ui" />
     <QtMoc Include="GameGUI.h" />
     <ClCompile Include="..\src\Dec2Roman.cpp" />
+    <ClCompile Include="..\src\Facts.cpp" />
+    <ClCompile Include="..\src\Menu.cpp" />
+    <ClCompile Include="..\src\Quiz.cpp" />
     <ClCompile Include="..\src\RomanConverter.cpp" />
     <ClCompile Include="GameGUI.cpp" />
     <ClCompile Include="main.cpp" />
