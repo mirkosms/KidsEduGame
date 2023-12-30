@@ -2,22 +2,24 @@
 
 GameGUI::GameGUI(QWidget* parent)
     : QMainWindow(parent)
-    , ui(new Ui::GameGUIClass()), quiz(), facts() // Inicjalizacja quizu
+    , ui(new Ui::GameGUIClass()), quiz(), facts() // Inicjalizacja quizu i ciekawostek
 {
     ui->setupUi(this);
-    connect(ui->pushButtonConvert2Decimal, SIGNAL(clicked()), this, SLOT(on_convert2DecimalClicked()));
-    connect(ui->pushButtonConvert2Roman, SIGNAL(clicked()), this, SLOT(on_convert2RomanClicked()));
+    connect(ui->pushButtonConvert2Decimal, &QPushButton::clicked, this, &GameGUI::on_convert2DecimalClicked);
+    connect(ui->pushButtonConvert2Roman, &QPushButton::clicked, this, &GameGUI::on_convert2RomanClicked);
 
-    connect(ui->startQuizButton, SIGNAL(clicked()), this, SLOT(on_startQuizButton_clicked()));
-    connect(ui->submitAnswerButton, SIGNAL(clicked()), this, SLOT(on_submitAnswerButton_clicked()));
+    connect(ui->startQuizButton, &QPushButton::clicked, this, &GameGUI::on_startQuizButton_clicked);
+    connect(ui->submitAnswerButton, &QPushButton::clicked, this, &GameGUI::on_submitAnswerButton_clicked);
 
-    feedbackTimer = new QTimer(this);  // Inicjalizacja timera
-    feedbackTimer->setInterval(5000);  // Ustawienie interwa³u na 5000 ms (5 sekund)
+    feedbackTimer = new QTimer(this);
+    feedbackTimer->setInterval(5000); // Ustawienie interwa³u na 5000 ms (5 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
 
-    connect(ui->buttonShowGeneralFact, SIGNAL(clicked()), this, SLOT(showRandomGeneralFact()));
-    connect(ui->buttonShowRomanFact, SIGNAL(clicked()), this, SLOT(showRandomRomanNumeralFact()));
+    // U¿ywamy nowszej sk³adni do po³¹czeñ przycisków z ciekawostkami
+    connect(ui->buttonShowGeneralFact, &QPushButton::clicked, this, &GameGUI::showRandomGeneralFact);
+    connect(ui->buttonShowRomanFact, &QPushButton::clicked, this, &GameGUI::showRandomRomanNumeralFact);
 }
+
 void GameGUI::on_convert2DecimalClicked() {
     QString roman = ui->lineEditRoman->text();
     int decimal = converter.Roman2Dec(roman.toUpper().toStdString());

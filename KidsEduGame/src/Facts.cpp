@@ -14,31 +14,52 @@ Facts::Facts() {
         "Uzycie liczb rzymskich trwalo dlugo po upadku Cesarstwa Rzymskiego. Od XIV wieku liczby rzymskie zaczely byc zastepowane przez liczby arabskie.",
         "Liczby rzymskie sa nadal uzywane w niektorych zastosowaniach do dnia dzisiejszego, na przyklad na tarczach zegarow."
     };
-    factsDisplayed.resize(generalFacts.size() + romanNumeralFacts.size(), false);
+    generalFactsDisplayed.resize(generalFacts.size(), false);
+    romanNumeralFactsDisplayed.resize(romanNumeralFacts.size(), false);
 }
 
-std::string Facts::getRandomGeneralFact() const {
+std::string Facts::getRandomGeneralFact() {
     static std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<std::size_t> dist(0, generalFacts.size() - 1);
 
     std::size_t index;
-    do {
-        index = dist(rng);
-    } while (factsDisplayed[index]);
-    factsDisplayed[index] = true;
-
+    for (index = dist(rng); generalFactsDisplayed[index]; index = dist(rng)) {
+        // Sprawdzamy, czy wszystkie ciekawostki zosta³y wyœwietlone
+        if (std::all_of(generalFactsDisplayed.begin(), generalFactsDisplayed.end(), [](bool v) { return v; })) {
+            std::fill(generalFactsDisplayed.begin(), generalFactsDisplayed.end(), false); // Resetuj stan wyœwietlania
+        }
+    }
+    generalFactsDisplayed[index] = true;
     return generalFacts[index];
 }
 
-std::string Facts::getRandomRomanNumeralFact() const {
+std::string Facts::getRandomRomanNumeralFact() {
     static std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<std::size_t> dist(0, romanNumeralFacts.size() - 1);
 
-    std::size_t index = romanNumeralFacts.size();
-    do {
-        index = dist(rng) + generalFacts.size(); // Offset by the size of the first facts array
-    } while (factsDisplayed[index]);
-    factsDisplayed[index] = true;
+    // Jeœli wszystkie ciekawostki zosta³y wyœwietlone, zresetuj stan
+    if (allFactsDisplayed()) {
+        resetFactsDisplayStatus();
+    }
 
-    return romanNumeralFacts[index - generalFacts.size()];
+    std::size_t index = dist(rng);
+    // Jeœli wylosowany fakt zosta³ ju¿ wyœwietlony, losuj ponownie
+    while (romanNumeralFactsDisplayed[index]) {
+        index = dist(rng);
+    }
+
+    romanNumeralFactsDisplayed[index] = true;  // Oznacz fakt jako wyœwietlony
+    return romanNumeralFacts[index];
+}
+
+
+bool Facts::allFactsDisplayed() const {
+    return std::all_of(generalFactsDisplayed.begin(), generalFactsDisplayed.end(), [](bool v) { return v; }) &&
+        std::all_of(romanNumeralFactsDisplayed.begin(), romanNumeralFactsDisplayed.end(), [](bool v) { return v; });
+}
+
+void Facts::resetFactsDisplayStatus() {
+    // Resetuje stan wyœwietlania dla wszystkich ciekawostek
+    std::fill(generalFactsDisplayed.begin(), generalFactsDisplayed.end(), false);
+    std::fill(romanNumeralFactsDisplayed.begin(), romanNumeralFactsDisplayed.end(), false);
 }
