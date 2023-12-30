@@ -37,20 +37,18 @@ std::string Facts::getRandomRomanNumeralFact() {
     static std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<std::size_t> dist(0, romanNumeralFacts.size() - 1);
 
-    // Jeœli wszystkie ciekawostki zosta³y wyœwietlone, zresetuj stan
-    if (allFactsDisplayed()) {
-        resetFactsDisplayStatus();
+    std::size_t index;
+    for (index = dist(rng); romanNumeralFactsDisplayed[index]; index = dist(rng)) {
+        // Sprawdzamy, czy wszystkie ciekawostki zosta³y wyœwietlone
+        if (std::all_of(romanNumeralFactsDisplayed.begin(), romanNumeralFactsDisplayed.end(), [](bool v) { return v; })) {
+            std::fill(romanNumeralFactsDisplayed.begin(), romanNumeralFactsDisplayed.end(), false); // Resetuj stan wyœwietlania
+            break; // Opcjonalnie, mo¿emy wyjœæ z pêtli, jeœli wszystkie fakty zosta³y zresetowane
+        }
     }
-
-    std::size_t index = dist(rng);
-    // Jeœli wylosowany fakt zosta³ ju¿ wyœwietlony, losuj ponownie
-    while (romanNumeralFactsDisplayed[index]) {
-        index = dist(rng);
-    }
-
-    romanNumeralFactsDisplayed[index] = true;  // Oznacz fakt jako wyœwietlony
+    romanNumeralFactsDisplayed[index] = true;
     return romanNumeralFacts[index];
 }
+
 
 
 bool Facts::allFactsDisplayed() const {
