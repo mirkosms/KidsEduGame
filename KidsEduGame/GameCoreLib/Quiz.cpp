@@ -4,7 +4,7 @@
 
 Quiz::Quiz() : score(0), currentQuestionIndex(0) {
     srand(static_cast<unsigned int>(time(nullptr)));
-    // Inicjalizacja pytañ
+    // Inicjalizacja pytaÅ„
     questions = {
         {1, "I"}, {4, "IV"}, {9, "IX"}, {58, "LVIII"}, {1994, "MCMXCIV"},
         {3, "III"}, {20, "XX"}, {90, "XC"}
@@ -18,9 +18,9 @@ void Quiz::start() {
 
 std::pair<int, std::string> Quiz::getNextQuestion() {
     if (currentQuestionIndex < questions.size()) {
-        return questions[currentQuestionIndex++]; // Zwraca bie¿¹ce pytanie i zwiêksza indeks
+        return questions[currentQuestionIndex++]; // Zwraca bieÅ¼Ä…ce pytanie i zwiÄ™ksza indeks
     }
-    return { -1, "" }; // Jeœli pytania siê skoñczy³y
+    return { -1, "" }; // JeÅ›li pytania siÄ™ skoÅ„czyÅ‚y
 }
 
 bool Quiz::checkAnswer(const std::string& userAnswer) {

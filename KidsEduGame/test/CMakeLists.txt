@@ -12,7 +12,7 @@ find_package(GTest CONFIG REQUIRED)
 include_directories(../include)
 
 # Dodanie plików źródłowych
-set(TEST_SOURCES test.cpp ../src/Dec2Roman.cpp)
+set(TEST_SOURCES test.cpp ../GameCoreLib/Dec2Roman.cpp)
 
 # Dodanie celu wykonawczego
 add_executable(GameTests ${TEST_SOURCES})

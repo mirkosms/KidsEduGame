@@ -10,16 +10,16 @@ private:
     int score;
     std::vector<std::pair<int, std::string>> questions; // Trzymamy pary decymlane i rzymskie
     std::vector<bool> answeredCorrectly;
-    size_t currentQuestionIndex; // Typ size_t do indeksowania wektorów
+    size_t currentQuestionIndex; // Typ size_t do indeksowania wektorÃ³w
 
 public:
     Quiz();
     size_t getCurrentQuestionIndex() const;
-    std::pair<int, std::string> getNextQuestion(); // Zwraca nastêpne pytanie jako parê
+    std::pair<int, std::string> getNextQuestion(); // Zwraca nastÄ™pne pytanie jako parÄ™
     bool checkAnswer(const std::string& userAnswer);
     int getScore() const; // Zwraca wynik
     void resetQuiz(); // Resetuje quiz
-    void start(); // Przygotowuje quiz do rozpoczêcia
+    void start(); // Przygotowuje quiz do rozpoczÄ™cia
 };
 
 #endif // QUIZ_H

@@ -42,7 +42,7 @@ void Menu::start() {
             int decimal;
             std::cout << "Podaj liczbe dziesietna: ";
             if (!(std::cin >> decimal)) {
-                std::cout << "Nieprawid³owa liczba dziesiêtna. Spróbuj ponownie.\n";
+                std::cout << "NieprawidÅ‚owa liczba dziesiÄ™tna. SprÃ³buj ponownie.\n";
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
@@ -64,7 +64,7 @@ void Menu::start() {
         case 6:
             return;
         default:
-            std::cout << "Nieprawid³owa opcja. Spróbuj ponownie.\n";
+            std::cout << "NieprawidÅ‚owa opcja. SprÃ³buj ponownie.\n";
         }
     }
 }

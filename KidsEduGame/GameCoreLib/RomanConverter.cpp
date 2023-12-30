@@ -9,7 +9,7 @@ RomanConverter::RomanConverter()
 }
 
 bool RomanConverter::isValidRoman(const std::string& roman) {
-    // U¿ywamy std:: przed nazwami z biblioteki standardowej
+    // UÅ¼ywamy std:: przed nazwami z biblioteki standardowej
     for (size_t i = 0; i < roman.length(); i++) {
         if (roman_map[roman[i]] < roman_map[roman[i + 1]]) {
             if (valid_subtractors.find(roman[i]) == std::string::npos || roman_map[roman[i]] * 10 < roman_map[roman[i + 1]]) {

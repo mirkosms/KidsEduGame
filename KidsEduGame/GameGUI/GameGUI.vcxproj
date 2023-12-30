@@ -102,16 +102,11 @@
     <QtRcc Include="GameGUI.qrc" />
     <QtUic Include="GameGUI.ui" />
     <QtMoc Include="GameGUI.h" />
-    <ClCompile Include="..\src\Dec2Roman.cpp" />
-    <ClCompile Include="..\src\Facts.cpp" />
-    <ClCompile Include="..\src\Quiz.cpp" />
-    <ClCompile Include="..\src\RomanConverter.cpp" />
-    <ClCompile Include="GameGUI.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\GameCore.vcxproj">
-      <Project>{775792f2-86e0-4296-bdc5-6aa5c2d5e0de}</Project>
+    <ProjectReference Include="..\build\GameCoreLib\GameCoreLib.vcxproj">
+      <Project>{1d23e27f-b338-3be7-81ad-225efb92ef0b}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

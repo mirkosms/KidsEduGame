@@ -4,14 +4,11 @@ project(GameCore)
 # Ustawienie standardu C++
 set(CMAKE_CXX_STANDARD 17)
 
-# Dołączanie katalogów z nagłówkami
-include_directories(../include)
+# Dodanie pliku źródłowego aplikacji konsolowej
+add_executable(GameCore main_console.cpp)
 
-# Dodanie plików źródłowych
-set(SOURCE_FILES GameCore.cpp Dec2Roman.cpp)
+# Linkowanie z biblioteką GameCoreLib
+target_link_libraries(GameCore GameCoreLib)
 
-# Dodanie celu wykonawczego
-add_executable(GameCore ${SOURCE_FILES})
-
-# Linkowanie z zależnościami (jeśli jakieś są)
-# target_link_libraries(GameCore PRIVATE some_library)
+# Upewnij się, że katalog include jest dostępny
+target_include_directories(GameCore PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)

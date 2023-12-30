@@ -136,22 +136,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Facts.cpp" />
-    <ClCompile Include="GameCore.cpp" />
-    <ClCompile Include="Dec2Roman.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Quiz.cpp" />
-    <ClCompile Include="RomanConverter.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\include\Dec2Roman.h" />
     <ClInclude Include="..\include\Facts.h" />
     <ClInclude Include="..\include\Menu.h" />
     <ClInclude Include="..\include\Quiz.h" />
     <ClInclude Include="..\include\RomanConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\build\GameCoreLib\GameCoreLib.vcxproj">
+      <Project>{1d23e27f-b338-3be7-81ad-225efb92ef0b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

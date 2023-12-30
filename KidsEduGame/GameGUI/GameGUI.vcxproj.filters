@@ -32,24 +32,9 @@
     <QtMoc Include="GameGUI.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="GameGUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Dec2Roman.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\RomanConverter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Facts.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Quiz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
