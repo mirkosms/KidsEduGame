@@ -4,6 +4,7 @@
 #include "Dec2Roman.h"
 #include "Quiz.h"
 #include "Menu.h"
+#include "Facts.h"
 #include <QTimer>
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +23,7 @@ private:
     Ui::GameGUIClass* ui;
     RomanConverter converter;
     Quiz quiz;
+    Facts facts;
     QTimer* feedbackTimer;
 
 private slots:
@@ -32,4 +34,6 @@ private slots:
     void proceedToNextQuestion();
     void displayNextQuestion();
     void updateScoreDisplay();
+    void showRandomGeneralFact();
+    void showRandomRomanNumeralFact();
 };

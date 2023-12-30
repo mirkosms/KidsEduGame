@@ -2,7 +2,7 @@
 
 GameGUI::GameGUI(QWidget* parent)
     : QMainWindow(parent)
-    , ui(new Ui::GameGUIClass()), quiz() // Inicjalizacja quizu
+    , ui(new Ui::GameGUIClass()), quiz(), facts() // Inicjalizacja quizu
 {
     ui->setupUi(this);
     connect(ui->pushButtonConvert2Decimal, SIGNAL(clicked()), this, SLOT(on_convert2DecimalClicked()));
@@ -14,6 +14,9 @@ GameGUI::GameGUI(QWidget* parent)
     feedbackTimer = new QTimer(this);  // Inicjalizacja timera
     feedbackTimer->setInterval(5000);  // Ustawienie interwa≥u na 5000 ms (5 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
+
+    connect(ui->buttonShowGeneralFact, SIGNAL(clicked()), this, SLOT(showRandomGeneralFact()));
+    connect(ui->buttonShowRomanFact, SIGNAL(clicked()), this, SLOT(showRandomRomanNumeralFact()));
 }
 void GameGUI::on_convert2DecimalClicked() {
     QString roman = ui->lineEditRoman->text();
@@ -42,7 +45,6 @@ void GameGUI::on_startQuizButton_clicked() {
 void GameGUI::on_submitAnswerButton_clicked() {
     QString userAnswer = ui->lineEditAnswer->text();
     bool isCorrect = quiz.checkAnswer(userAnswer.toStdString()); // Sprawdü odpowiedü
-    qDebug() << "isCorrect value:" << isCorrect;
 
     // Ustaw tekst w zaleønoúci od poprawnoúci odpowiedzi
     ui->labelFeedback->clear();  // WyczyúÊ obecny stan
@@ -90,6 +92,15 @@ void GameGUI::updateScoreDisplay() {
     ui->labelScore->setText(QString("Twoj wynik: %1").arg(score));
 }
 
+void GameGUI::showRandomGeneralFact() {
+    QString fact = QString::fromStdString(facts.getRandomGeneralFact());
+    ui->labelFactsDisplay->setText(fact);
+}
+
+void GameGUI::showRandomRomanNumeralFact() {
+    QString fact = QString::fromStdString(facts.getRandomRomanNumeralFact());
+    ui->labelFactsDisplay->setText(fact);
+}
 
 GameGUI::~GameGUI()
 {

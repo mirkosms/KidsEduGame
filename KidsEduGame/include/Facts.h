@@ -2,11 +2,19 @@
 #define FACTS_H
 
 #include <string>
+#include <vector>
 
 class Facts {
+private:
+    std::vector<std::string> generalFacts;
+    std::vector<std::string> romanNumeralFacts;
+    mutable std::vector<bool> factsDisplayed;
+
 public:
-    void interestingFacts() const;
-    void historyOfRomanNumerals() const;
+    Facts();
+
+    std::string getRandomGeneralFact() const;
+    std::string getRandomRomanNumeralFact() const;
 };
 
 #endif // FACTS_H

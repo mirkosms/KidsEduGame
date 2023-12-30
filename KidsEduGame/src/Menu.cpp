@@ -56,10 +56,10 @@ void Menu::start() {
             quiz.start();
             break;
         case 4:
-            facts.interestingFacts();
+            std::cout << facts.getRandomGeneralFact() << std::endl;
             break;
         case 5:
-            facts.historyOfRomanNumerals();
+            std::cout << facts.getRandomRomanNumeralFact() << std::endl;
             break;
         case 6:
             return;

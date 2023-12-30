@@ -17,9 +17,9 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>521</width>
+      <x>50</x>
+      <y>20</y>
+      <width>511</width>
       <height>361</height>
      </rect>
     </property>
@@ -27,7 +27,7 @@
      <string notr="true">background-color: yellow;</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Konwersja">
      <attribute name="title">
@@ -197,8 +197,47 @@
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Strona</string>
+      <string>Ciekawostki</string>
      </attribute>
+     <widget class="QPushButton" name="buttonShowGeneralFact">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ogólne</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonShowRomanFact">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Historyczne</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelFactsDisplay">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>100</y>
+        <width>301</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tekst ciekawostki</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
