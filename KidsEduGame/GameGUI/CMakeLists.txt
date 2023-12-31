@@ -18,8 +18,7 @@ include_directories(../include ../GameGUI)
 # Dodawanie plików źródłowych do projektu
 set(PROJECT_SOURCES 
     GameGUI.cpp
-    main.cpp
-    ../GameCoreLib)
+    main.cpp)
 
 # Dodanie plików UI
 set(PROJECT_UI 
