@@ -12,10 +12,10 @@ GameGUI::GameGUI(QWidget* parent)
     connect(ui->submitAnswerButton, &QPushButton::clicked, this, &GameGUI::on_submitAnswerButton_clicked);
 
     feedbackTimer = new QTimer(this);
-    feedbackTimer->setInterval(3000); // Ustawienie interwa≥u na 5000 ms (5 sekund)
+    feedbackTimer->setInterval(3000); // Ustawienie interwa≈Çu na 5000 ms (5 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
 
-    // Uøywamy nowszej sk≥adni do po≥πczeÒ przyciskÛw z ciekawostkami
+    // U≈ºywamy nowszej sk≈Çadni do po≈ÇƒÖcze≈Ñ przycisk√≥w z ciekawostkami
     connect(ui->buttonShowGeneralFact, &QPushButton::clicked, this, &GameGUI::showRandomGeneralFact);
     connect(ui->buttonShowRomanFact, &QPushButton::clicked, this, &GameGUI::showRandomRomanNumeralFact);
 }
@@ -23,7 +23,7 @@ GameGUI::GameGUI(QWidget* parent)
 void GameGUI::on_convert2DecimalClicked() {
     QString roman = ui->lineEditRoman->text();
     int decimal = converter.Roman2Dec(roman.toUpper().toStdString());
-    ui->labelDecimalResult->setText(decimal != -1 ? QString::number(decimal) : "B≥πd!");
+    ui->labelDecimalResult->setText(decimal != -1 ? QString::number(decimal) : "B≈ÇƒÖd!");
 }
 
 void GameGUI::on_convert2RomanClicked() {
@@ -31,30 +31,30 @@ void GameGUI::on_convert2RomanClicked() {
     int decimal = ui->lineEditDecimal->text().toInt(&ok);
     if (ok) {
         QString roman = QString::fromStdString(ConvertDecimal_2_Roman(decimal));
-        ui->labelRomanResult->setText(!roman.isEmpty() ? roman : "B≥πd!");
+        ui->labelRomanResult->setText(!roman.isEmpty() ? roman : "B≈ÇƒÖd!");
     }
     else {
-        ui->labelRomanResult->setText("B≥πd!");
+        ui->labelRomanResult->setText("B≈ÇƒÖd!");
     }
 }
 
 void GameGUI::on_startQuizButton_clicked() {
-    // Rozpocznij quiz i wyúwietl pierwsze pytanie
+    // Rozpocznij quiz i wy≈õwietl pierwsze pytanie
     quiz.start();
     displayNextQuestion();
 }
 
 void GameGUI::on_submitAnswerButton_clicked() {
     QString userAnswer = ui->lineEditAnswer->text();
-    bool isCorrect = quiz.checkAnswer(userAnswer.toStdString()); // Sprawdü odpowiedü
+    bool isCorrect = quiz.checkAnswer(userAnswer.toStdString()); // Sprawd≈∫ odpowied≈∫
 
-    // Ustaw tekst w zaleønoúci od poprawnoúci odpowiedzi
-    ui->labelFeedback->clear();  // WyczyúÊ obecny stan
-    ui->labelFeedback->setText(isCorrect ? "Dobrze!" : "Zle.");
+    // Ustaw tekst w zale≈ºno≈õci od poprawno≈õci odpowiedzi
+    ui->labelFeedback->clear();  // Wyczy≈õƒá obecny stan
+    ui->labelFeedback->setText(isCorrect ? "Dobrze!" : "≈πle.");
     ui->labelFeedback->setStyleSheet(isCorrect ? "color: green;" : "color: red;"); // Ustaw kolor na zielony lub czerwony
 
     if (isCorrect) {
-        updateScoreDisplay(); // Aktualizuj wynik tylko jeúli odpowiedü jest poprawna
+        updateScoreDisplay(); // Aktualizuj wynik tylko je≈õli odpowied≈∫ jest poprawna
     }
 
     feedbackTimer->start();
@@ -65,16 +65,16 @@ void GameGUI::on_submitAnswerButton_clicked() {
 
 void GameGUI::proceedToNextQuestion() {
     feedbackTimer->stop();  // Zatrzymaj timer
-    ui->labelFeedback->clear(); // WyczyúÊ komunikat o poprawnoúci
-    displayNextQuestion();  // Przejdü do nastÍpnego pytania lub zakoÒcz quiz
-    ui->submitAnswerButton->setEnabled(true); // Ponownie w≥πcz przycisk
+    ui->labelFeedback->clear(); // Wyczy≈õƒá komunikat o poprawno≈õci
+    displayNextQuestion();  // Przejd≈∫ do nastƒôpnego pytania lub zako≈Ñcz quiz
+    ui->submitAnswerButton->setEnabled(true); // Ponownie w≈ÇƒÖcz przycisk
     
 }
 
 void GameGUI::displayNextQuestion() {
     auto questionPair = quiz.getNextQuestion();
     if (questionPair.first != -1) {
-        QString questionText = QString("Jaka jest liczba dziesietna dla rzymskiej '%1'?").arg(QString::fromStdString(questionPair.second));
+        QString questionText = QString("Jaka jest liczba dziesiƒôtna dla rzymskiej '%1'?").arg(QString::fromStdString(questionPair.second));
         ui->labelQuestion->setText(questionText);
         ui->lineEditAnswer->clear();
         ui->labelFeedback->clear();
@@ -91,7 +91,7 @@ void GameGUI::displayNextQuestion() {
 
 void GameGUI::updateScoreDisplay() {
     int score = quiz.getScore();
-    ui->labelScore->setText(QString("Twoj wynik: %1").arg(score));
+    ui->labelScore->setText(QString("Tw√≥j wynik: %1").arg(score));
 }
 
 void GameGUI::showRandomGeneralFact() {
