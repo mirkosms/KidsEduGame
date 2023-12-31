@@ -3,11 +3,12 @@
 #include <string>
 #include "Dec2Roman.h"
 
-using namespace std;
+std::string ConvertDecimal_2_Roman(int in_dec_num) {
+    if (in_dec_num <= 0 || in_dec_num > 3999) {
+        return "N/D"; // Komunikat dla liczb poza zakresem 1-3999
+    }
 
-string ConvertDecimal_2_Roman(int in_dec_num) {
-    // The values need to be sorted from the largest one
-    const vector< pair<int, string> > RomanValueTranslator = {
+    const std::vector<std::pair<int, std::string>> RomanValueTranslator = {
         {1000, "M"}, {900, "CM"},
         {500, "D"}, {400, "CD"},
         {100, "C"}, {90, "XC"},
@@ -17,7 +18,7 @@ string ConvertDecimal_2_Roman(int in_dec_num) {
         {1, "I"}
     };
 
-    string outStr = "";
+    std::string outStr = "";
     // Traverse all pairs [val, str], starting from the largest val
     for (const auto& [val, str] : RomanValueTranslator) {
         while (in_dec_num >= val) { // iterate subtracting the largest possible value
