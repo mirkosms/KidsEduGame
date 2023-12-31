@@ -1,19 +1,20 @@
 #include "Facts.h"
+#include <fstream>
+#include <sstream>
 #include <algorithm>
 #include <random>
 #include <chrono>
+#include <iostream>
 
 Facts::Facts() {
-    generalFacts = {
-        "Słowo 'hundred' pochodzi od staronordyjskiego słowa 'hundrath', które oznacza 120, a nie 100.",
-        "Pierwiastek kwadratowy z 2 (1.41) jest znany jako stala Pitagorasa.",
-        "Zero jest jedyna liczba, ktora nie moze byc reprezentowana w systemie rzymskim."
-    };
-    romanNumeralFacts = {
-        "Historia liczb rzymskich: Liczby rzymskie pochodzą z starożytnego Rzymu i były powszechnie używane do zapisywania liczb w Europie aż do późnego średniowiecza.",
-        "Uzycie liczb rzymskich trwalo dlugo po upadku Cesarstwa Rzymskiego. Od XIV wieku liczby rzymskie zaczely byc zastepowane przez liczby arabskie.",
-        "Liczby rzymskie sa nadal uzywane w niektorych zastosowaniach do dnia dzisiejszego, na przyklad na tarczach zegarow."
-    };
+    try {
+        loadFactsFromFile("../data/general_facts.txt", generalFacts);
+        loadFactsFromFile("../data/roman_numeral_facts.txt", romanNumeralFacts);
+    }
+    catch (const std::runtime_error& e) {
+        std::cerr << "Blad podczas ladowania ciekawostek: " << e.what() << std::endl;
+    }
+
     generalFactsDisplayed.resize(generalFacts.size(), false);
     romanNumeralFactsDisplayed.resize(romanNumeralFacts.size(), false);
 }
@@ -60,4 +61,17 @@ void Facts::resetFactsDisplayStatus() {
     // Resetuje stan wyświetlania dla wszystkich ciekawostek
     std::fill(generalFactsDisplayed.begin(), generalFactsDisplayed.end(), false);
     std::fill(romanNumeralFactsDisplayed.begin(), romanNumeralFactsDisplayed.end(), false);
+}
+
+void Facts::loadFactsFromFile(const std::string& filePath, std::vector<std::string>& facts) {
+    std::ifstream file(filePath);
+    if (!file.is_open()) {
+        throw std::runtime_error("Unable to open file: " + filePath);
+    }
+    std::string line;
+    while (std::getline(file, line)) {
+        if (!line.empty()) {
+            facts.push_back(line);
+        }
+    }
 }

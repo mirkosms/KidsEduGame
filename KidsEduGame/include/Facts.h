@@ -13,6 +13,7 @@ public:
     bool allFactsDisplayed() const;
 
 private:
+    void loadFactsFromFile(const std::string& filePath, std::vector<std::string>& facts);
     std::vector<std::string> generalFacts;
     std::vector<std::string> romanNumeralFacts;
     mutable std::vector<bool> generalFactsDisplayed;
