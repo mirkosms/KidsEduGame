@@ -12,7 +12,7 @@ GameGUI::GameGUI(QWidget* parent)
     connect(ui->submitAnswerButton, &QPushButton::clicked, this, &GameGUI::on_submitAnswerButton_clicked);
 
     feedbackTimer = new QTimer(this);
-    feedbackTimer->setInterval(5000); // Ustawienie interwa³u na 5000 ms (5 sekund)
+    feedbackTimer->setInterval(3000); // Ustawienie interwa³u na 5000 ms (5 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
 
     // U¿ywamy nowszej sk³adni do po³¹czeñ przycisków z ciekawostkami
@@ -23,7 +23,7 @@ GameGUI::GameGUI(QWidget* parent)
 void GameGUI::on_convert2DecimalClicked() {
     QString roman = ui->lineEditRoman->text();
     int decimal = converter.Roman2Dec(roman.toUpper().toStdString());
-    ui->labelDecimalResult->setText(decimal != -1 ? QString::number(decimal) : "Blad");
+    ui->labelDecimalResult->setText(decimal != -1 ? QString::number(decimal) : "B³¹d!");
 }
 
 void GameGUI::on_convert2RomanClicked() {
@@ -31,10 +31,10 @@ void GameGUI::on_convert2RomanClicked() {
     int decimal = ui->lineEditDecimal->text().toInt(&ok);
     if (ok) {
         QString roman = QString::fromStdString(ConvertDecimal_2_Roman(decimal));
-        ui->labelRomanResult->setText(!roman.isEmpty() ? roman : "Blad");
+        ui->labelRomanResult->setText(!roman.isEmpty() ? roman : "B³¹d!");
     }
     else {
-        ui->labelRomanResult->setText("Blad");
+        ui->labelRomanResult->setText("B³¹d!");
     }
 }
 

@@ -10,11 +10,6 @@ add_subdirectory(src)
 add_subdirectory(GameGUI)
 add_subdirectory(test)
 
-# # Kopiowanie plików danych do katalogu binarnego
-# file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/build/GameGUI/data/general_facts.txt
-#      DESTINATION ${CMAKE_BINARY_DIR}/data)
-# file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/build/GameGUI/data/roman_numeral_facts.txt
-#      DESTINATION ${CMAKE_BINARY_DIR}/data)
 # Kopiowanie plików danych do katalogu binarnego przy każdej konfiguracji
 foreach(config IN LISTS CMAKE_CONFIGURATION_TYPES)
     file(COPY ${CMAKE_SOURCE_DIR}/build/GameGUI/data/general_facts.txt
