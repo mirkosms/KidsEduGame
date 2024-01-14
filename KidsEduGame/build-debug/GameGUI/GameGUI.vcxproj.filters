@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\GameGUI\GameGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\GameGUI\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\EWIEGA46WW\qrc_GameGUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\include_Debug\ui_GameGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\include_Release\ui_GameGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\include_MinSizeRel\ui_GameGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\include_RelWithDebInfo\ui_GameGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\CMakeFiles\13ffc644812fca6ffea28a3ea90f5a4d\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\CMakeFiles\c577312504f177f7ca565348cbf736a8\qrc_GameGUI.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\HP\KidsEduGame\KidsEduGame\GameGUI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\GameGUI\GameGUI.ui" />
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\GameGUI\GameGUI.qrc" />
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-debug\GameGUI\GameGUI_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A0A8544C-7238-3A50-98FC-60DA63AC9178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3DDF8EE0-AE21-3791-9891-1EA0CE9A6D99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E8AA9A9E-B120-3F02-A0B3-155EF7BF698B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

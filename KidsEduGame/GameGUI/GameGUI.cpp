@@ -60,7 +60,7 @@ void GameGUI::on_submitAnswerButton_clicked() {
     feedbackTimer->start();
     ui->submitAnswerButton->setEnabled(false);
     ui->startQuizButton->setEnabled(false);
-    
+
 }
 
 void GameGUI::proceedToNextQuestion() {
@@ -68,7 +68,7 @@ void GameGUI::proceedToNextQuestion() {
     ui->labelFeedback->clear(); // Wyczyść komunikat o poprawności
     displayNextQuestion();  // Przejdź do następnego pytania lub zakończ quiz
     ui->submitAnswerButton->setEnabled(true); // Ponownie włącz przycisk
-    
+
 }
 
 void GameGUI::displayNextQuestion() {

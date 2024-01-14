@@ -1,0 +1,15 @@
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/RUN_TESTS.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/ZERO_CHECK.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameCoreLib/CMakeFiles/GameCoreLib.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameCoreLib/CMakeFiles/RUN_TESTS.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameCoreLib/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/src/CMakeFiles/GameCore.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/src/CMakeFiles/RUN_TESTS.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/src/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameGUI/CMakeFiles/GameGUI.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameGUI/CMakeFiles/RUN_TESTS.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/GameGUI/CMakeFiles/ALL_BUILD.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/test/CMakeFiles/GameTests.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/test/CMakeFiles/RUN_TESTS.dir
+C:/Users/HP/KidsEduGame/KidsEduGame/build-release/test/CMakeFiles/ALL_BUILD.dir

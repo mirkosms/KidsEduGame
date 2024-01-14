@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake
+C:/Users/HP/KidsEduGame/KidsEduGame/test/CMakeLists.txt
+C:/vcpkg/vcpkg-master/installed/x64-windows/share/gtest/GTestConfig.cmake
+C:/vcpkg/vcpkg-master/installed/x64-windows/share/gtest/GTestConfigVersion.cmake
+C:/vcpkg/vcpkg-master/installed/x64-windows/share/gtest/GTestTargets-debug.cmake
+C:/vcpkg/vcpkg-master/installed/x64-windows/share/gtest/GTestTargets-release.cmake
+C:/vcpkg/vcpkg-master/installed/x64-windows/share/gtest/GTestTargets.cmake

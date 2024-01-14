@@ -5,11 +5,36 @@
 #include <random>
 #include <chrono>
 #include <iostream>
+//#include <QCoreApplication> // Upewnij się, że dołączyłeś odpowiedni nagłówek Qt
+//
+//Facts::Facts() {
+//    QString appDir = QCoreApplication::applicationDirPath();
+//    QString generalFactsPath = appDir + "/data/general_facts.txt";
+//    QString romanNumeralFactsPath = appDir + "/data/roman_numeral_facts.txt";
+//
+//    try {
+//        loadFactsFromFile(generalFactsPath, generalFacts);
+//        loadFactsFromFile(romanNumeralFactsPath, romanNumeralFacts);
+//    }
+//    catch (const std::runtime_error& e) {
+//        std::cerr << "Blad podczas ladowania ciekawostek: " << e.what() << std::endl;
+//    }
+//
+//    generalFactsDisplayed.resize(generalFacts.size(), false);
+//    romanNumeralFactsDisplayed.resize(romanNumeralFacts.size(), false);
+//}
 
 Facts::Facts() {
+    // Zakładając, że plik wykonywalny znajduje się w Debug/GameGUI lub Release/GameGUI
+    // i że folder data jest w tym samym katalogu co plik wykonywalny.
+    std::string baseDir = "./"; // Dla ścieżki bezwzględnej od miejsca pliku wykonywalnego
+
+    std::string generalFactsPath = baseDir + "data/general_facts.txt";
+    std::string romanNumeralFactsPath = baseDir + "data/roman_numeral_facts.txt";
+
     try {
-        loadFactsFromFile("../data/general_facts.txt", generalFacts);
-        loadFactsFromFile("../data/roman_numeral_facts.txt", romanNumeralFacts);
+        loadFactsFromFile(generalFactsPath, generalFacts);
+        loadFactsFromFile(romanNumeralFactsPath, romanNumeralFacts);
     }
     catch (const std::runtime_error& e) {
         std::cerr << "Blad podczas ladowania ciekawostek: " << e.what() << std::endl;
@@ -18,6 +43,20 @@ Facts::Facts() {
     generalFactsDisplayed.resize(generalFacts.size(), false);
     romanNumeralFactsDisplayed.resize(romanNumeralFacts.size(), false);
 }
+
+
+//Facts::Facts() {
+//    try {
+//        loadFactsFromFile("data/general_facts.txt", generalFacts);
+//        loadFactsFromFile("data/roman_numeral_facts.txt", romanNumeralFacts);
+//    }
+//    catch (const std::runtime_error& e) {
+//        std::cerr << "Blad podczas ladowania ciekawostek: " << e.what() << std::endl;
+//    }
+//
+//    generalFactsDisplayed.resize(generalFacts.size(), false);
+//    romanNumeralFactsDisplayed.resize(romanNumeralFacts.size(), false);
+//}
 
 std::string Facts::getRandomGeneralFact() {
     static std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());

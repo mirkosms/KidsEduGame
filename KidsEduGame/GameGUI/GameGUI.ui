@@ -45,7 +45,7 @@
     </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Quiz">
      <attribute name="title">
@@ -199,6 +199,9 @@
         <pointsize>14</pointsize>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="text">
+       <string/>
       </property>
       <property name="placeholderText">
        <string>Wpisz liczbę rzymską</string>

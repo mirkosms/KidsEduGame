@@ -1,0 +1,529 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+      Kompilacja rozpoczęła się 14.01.2024 00:28:52.
+      
+      Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.vcxproj" w węźle 1 (domyślne elementy docelowe).
+      PrepareForBuild:
+        Tworzenie katalogu "Debug\\".
+        Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+        Tworzenie katalogu "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Trwa tworzenie "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+        Modyfikowanie "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Usuwanie pliku "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Modyfikowanie "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdC\\CompilerIdC.vcxproj" wykonane (domyślne elementy docelowe).
+      
+      Kompilacja powiodła się.
+          Ostrzeżenia: 0
+          Liczba błędów: 0
+      
+      Czas, który upłynął: 00:00:00.97
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/3.26.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+      Kompilacja rozpoczęła się 14.01.2024 00:28:54.
+      
+      Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" w węźle 1 (domyślne elementy docelowe).
+      PrepareForBuild:
+        Tworzenie katalogu "Debug\\".
+        Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+        Tworzenie katalogu "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Trwa tworzenie "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+        Modyfikowanie "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Usuwanie pliku "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Modyfikowanie "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\3.26.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" wykonane (domyślne elementy docelowe).
+      
+      Kompilacja powiodła się.
+          Ostrzeżenia: 0
+          Liczba błędów: 0
+      
+      Czas, który upłynął: 00:00:00.99
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/3.26.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-wlci33"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-wlci33"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-wlci33
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_609f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:55.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\cmTC_609f8.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_609f8.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\".
+          Tworzenie katalogu "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_609f8.dir\\Debug\\\\" /Fd"cmTC_609f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_609f8.dir\\Debug\\\\" /Fd"cmTC_609f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\cmTC_609f8.exe" /INCREMENTAL /ILK:"cmTC_609f8.dir\\Debug\\cmTC_609f8.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-wlci33/Debug/cmTC_609f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-wlci33/Debug/cmTC_609f8.lib" /MACHINE:X64  /machine:x64 cmTC_609f8.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_609f8.vcxproj -> C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\cmTC_609f8.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\cmTC_609f8.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\cmTC_609f8.write.1u.tlog" "cmTC_609f8.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\cmTC_609f8.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\cmTC_609f8.write.1u.tlog" "cmTC_609f8.dir\\Debug\\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\Debug\\cmTC_609f8.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\cmTC_609f8.write.1u.tlog" "cmTC_609f8.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Usuwanie pliku "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\unsuccessfulbuild".
+          Modyfikowanie "cmTC_609f8.dir\\Debug\\cmTC_609f8.tlog\\cmTC_609f8.lastbuildstate".
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-wlci33\\cmTC_609f8.vcxproj" wykonane (domyślne elementy docelowe).
+        
+        Kompilacja powiodła się.
+            Ostrzeżenia: 0
+            Liczba błędów: 0
+        
+        Czas, który upłynął: 00:00:00.99
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-8cui3b"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-8cui3b"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-8cui3b
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_eddcc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:56.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\cmTC_eddcc.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_eddcc.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\".
+          Tworzenie katalogu "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_eddcc.dir\\Debug\\\\" /Fd"cmTC_eddcc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_eddcc.dir\\Debug\\\\" /Fd"cmTC_eddcc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\cmTC_eddcc.exe" /INCREMENTAL /ILK:"cmTC_eddcc.dir\\Debug\\cmTC_eddcc.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-8cui3b/Debug/cmTC_eddcc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-8cui3b/Debug/cmTC_eddcc.lib" /MACHINE:X64  /machine:x64 cmTC_eddcc.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_eddcc.vcxproj -> C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\cmTC_eddcc.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\cmTC_eddcc.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\cmTC_eddcc.write.1u.tlog" "cmTC_eddcc.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\cmTC_eddcc.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\cmTC_eddcc.write.1u.tlog" "cmTC_eddcc.dir\\Debug\\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\Debug\\cmTC_eddcc.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\cmTC_eddcc.write.1u.tlog" "cmTC_eddcc.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Usuwanie pliku "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\unsuccessfulbuild".
+          Modyfikowanie "cmTC_eddcc.dir\\Debug\\cmTC_eddcc.tlog\\cmTC_eddcc.lastbuildstate".
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-8cui3b\\cmTC_eddcc.vcxproj" wykonane (domyślne elementy docelowe).
+        
+        Kompilacja powiodła się.
+            Ostrzeżenia: 0
+            Liczba błędów: 0
+        
+        Czas, który upłynął: 00:00:00.98
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:111 (include)"
+      - "GameGUI/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-fkd94h"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-fkd94h"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-fkd94h
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_50524.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:57.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\cmTC_50524.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_50524.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\Debug\\".
+          Tworzenie katalogu "cmTC_50524.dir\\Debug\\cmTC_50524.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_50524.dir\\Debug\\cmTC_50524.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_50524.dir\\Debug\\cmTC_50524.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_50524.dir\\Debug\\\\" /Fd"cmTC_50524.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\src.c"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_50524.dir\\Debug\\\\" /Fd"cmTC_50524.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\src.c"
+          src.c
+        C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\src.c(1,10): error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\cmTC_50524.vcxproj]
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\cmTC_50524.vcxproj" wykonane (domyślne elementy docelowe) - NIEPOWODZENIE.
+        
+        Kompilacja NIE POWIODŁA SIĘ.
+        
+        "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\cmTC_50524.vcxproj" (domyślny element docelowy) (1)->
+        (element docelowy ClCompile) -> 
+          C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\src.c(1,10): error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-fkd94h\\cmTC_50524.vcxproj]
+        
+            Ostrzeżenia: 0
+            Liczba błędów: 1
+        
+        Czas, który upłynął: 00:00:00.39
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:111 (include)"
+      - "GameGUI/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-mp7wvj"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-mp7wvj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-mp7wvj
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38eb8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:58.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\cmTC_38eb8.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_38eb8.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\Debug\\".
+          Tworzenie katalogu "cmTC_38eb8.dir\\Debug\\cmTC_38eb8.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_38eb8.dir\\Debug\\cmTC_38eb8.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_38eb8.dir\\Debug\\cmTC_38eb8.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38eb8.dir\\Debug\\\\" /Fd"cmTC_38eb8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38eb8.dir\\Debug\\\\" /Fd"cmTC_38eb8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\Debug\\cmTC_38eb8.exe" /INCREMENTAL /ILK:"cmTC_38eb8.dir\\Debug\\cmTC_38eb8.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-mp7wvj/Debug/cmTC_38eb8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-mp7wvj/Debug/cmTC_38eb8.lib" /MACHINE:X64  /machine:x64 cmTC_38eb8.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: nie można otworzyć pliku "pthreads.lib" [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\cmTC_38eb8.vcxproj]
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\cmTC_38eb8.vcxproj" wykonane (domyślne elementy docelowe) - NIEPOWODZENIE.
+        
+        Kompilacja NIE POWIODŁA SIĘ.
+        
+        "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\cmTC_38eb8.vcxproj" (domyślny element docelowy) (1)->
+        (element docelowy Link) -> 
+          LINK : fatal error LNK1104: nie można otworzyć pliku "pthreads.lib" [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-mp7wvj\\cmTC_38eb8.vcxproj]
+        
+            Ostrzeżenia: 0
+            Liczba błędów: 1
+        
+        Czas, który upłynął: 00:00:00.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:111 (include)"
+      - "GameGUI/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-6ydltx"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-6ydltx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-6ydltx
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2006e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:59.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\cmTC_2006e.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_2006e.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\Debug\\".
+          Tworzenie katalogu "cmTC_2006e.dir\\Debug\\cmTC_2006e.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_2006e.dir\\Debug\\cmTC_2006e.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_2006e.dir\\Debug\\cmTC_2006e.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2006e.dir\\Debug\\\\" /Fd"cmTC_2006e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2006e.dir\\Debug\\\\" /Fd"cmTC_2006e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\Debug\\cmTC_2006e.exe" /INCREMENTAL /ILK:"cmTC_2006e.dir\\Debug\\cmTC_2006e.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-6ydltx/Debug/cmTC_2006e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-6ydltx/Debug/cmTC_2006e.lib" /MACHINE:X64  /machine:x64 cmTC_2006e.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: nie można otworzyć pliku "pthread.lib" [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\cmTC_2006e.vcxproj]
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\cmTC_2006e.vcxproj" wykonane (domyślne elementy docelowe) - NIEPOWODZENIE.
+        
+        Kompilacja NIE POWIODŁA SIĘ.
+        
+        "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\cmTC_2006e.vcxproj" (domyślny element docelowy) (1)->
+        (element docelowy Link) -> 
+          LINK : fatal error LNK1104: nie można otworzyć pliku "pthread.lib" [C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-6ydltx\\cmTC_2006e.vcxproj]
+        
+            Ostrzeżenia: 0
+            Liczba błędów: 1
+        
+        Czas, który upłynął: 00:00:00.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:41 (include)"
+      - "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:156 (find_package)"
+      - "GameGUI/CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-jph8yx"
+      binary: "C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-jph8yx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-jph8yx
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_bf1db.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && Wersja programu MSBuild 17.8.3+195e7f5a3 dla .NET Framework
+        Kompilacja rozpoczęła się 14.01.2024 00:28:59.
+        
+        Projekt "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\cmTC_bf1db.vcxproj" w węźle 1 (domyślne elementy docelowe).
+        PrepareForBuild:
+          Tworzenie katalogu "cmTC_bf1db.dir\\Debug\\".
+          Dane wyjściowe ze strukturą są włączone. Formatowanie diagnostyki kompilatora będzie odzwierciedlać hierarchię błędów. Aby uzyskać więcej informacji, zobacz https://aka.ms/cpp/structured-output.
+          Tworzenie katalogu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\".
+          Tworzenie katalogu "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\".
+        InitializeBuildStatus:
+          Trwa tworzenie "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\unsuccessfulbuild", ponieważ określono "AlwaysCreate".
+          Modyfikowanie "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\"
+          Using normalized configuration "Release"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_bf1db.dir\\Debug\\\\" /Fd"cmTC_bf1db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\src.cxx"
+          Microsoft (R) C/C++ wersja kompilatora optymalizującego 19.38.33133 dla x64
+          Copyright (C) Microsoft Corporation. Wszystkie prawa zastrzeżone.
+          cl /c /I"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_bf1db.dir\\Debug\\\\" /Fd"cmTC_bf1db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\cmTC_bf1db.exe" /INCREMENTAL /ILK:"cmTC_bf1db.dir\\Debug\\cmTC_bf1db.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-jph8yx/Debug/cmTC_bf1db.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/HP/KidsEduGame/KidsEduGame/build-release/CMakeFiles/CMakeScratch/TryCompile-jph8yx/Debug/cmTC_bf1db.lib" /MACHINE:X64  /machine:x64 cmTC_bf1db.dir\\Debug\\src.obj
+          cmTC_bf1db.vcxproj -> C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\cmTC_bf1db.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\cmTC_bf1db.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\cmTC_bf1db.write.1u.tlog" "cmTC_bf1db.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          Polecenie "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\cmTC_bf1db.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\cmTC_bf1db.write.1u.tlog" "cmTC_bf1db.dir\\Debug\\vcpkg.applocal.log"" zostało zakończone przez kod 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\vcpkg-master\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\Debug\\cmTC_bf1db.exe" "C:\\vcpkg\\vcpkg-master\\installed\\x64-windows\\bin" "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\cmTC_bf1db.write.1u.tlog" "cmTC_bf1db.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Usuwanie pliku "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\unsuccessfulbuild".
+          Modyfikowanie "cmTC_bf1db.dir\\Debug\\cmTC_bf1db.tlog\\cmTC_bf1db.lastbuildstate".
+        Kompilowanie projektu "C:\\Users\\HP\\KidsEduGame\\KidsEduGame\\build-release\\CMakeFiles\\CMakeScratch\\TryCompile-jph8yx\\cmTC_bf1db.vcxproj" wykonane (domyślne elementy docelowe).
+        
+        Kompilacja powiodła się.
+            Ostrzeżenia: 0
+            Liczba błędów: 0
+        
+        Czas, który upłynął: 00:00:01.02
+        
+      exitCode: 0
+...

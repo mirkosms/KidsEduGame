@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\HP\KidsEduGame\KidsEduGame\build-release\CMakeFiles\8caadd51b3f382f3cabc2cef86d66c09\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5FABED49-7BD5-3768-B676-5E720BC0CFC9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
