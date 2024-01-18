@@ -150,7 +150,7 @@ public:
         pushButtonConvert2Roman->setAutoFillBackground(false);
         labelRomanResult = new QLabel(Konwersja);
         labelRomanResult->setObjectName("labelRomanResult");
-        labelRomanResult->setGeometry(QRect(408, 240, 131, 71));
+        labelRomanResult->setGeometry(QRect(388, 240, 161, 71));
         QFont font7;
         font7.setFamilies({QString::fromUtf8("Sitka Small Semibold")});
         font7.setPointSize(15);
@@ -164,7 +164,7 @@ public:
         labelRomanResult->setAlignment(Qt::AlignCenter);
         labelDecimalResult = new QLabel(Konwersja);
         labelDecimalResult->setObjectName("labelDecimalResult");
-        labelDecimalResult->setGeometry(QRect(88, 240, 131, 71));
+        labelDecimalResult->setGeometry(QRect(78, 240, 161, 71));
         labelDecimalResult->setFont(font7);
         labelDecimalResult->setMouseTracking(false);
         labelDecimalResult->setFrameShape(QFrame::Box);
@@ -212,7 +212,7 @@ public:
 
         retranslateUi(GameGUIClass);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(GameGUIClass);
@@ -224,7 +224,7 @@ public:
         labelQuestion->setText(QCoreApplication::translate("GameGUIClass", "Pytanie", nullptr));
         lineEditAnswer->setPlaceholderText(QCoreApplication::translate("GameGUIClass", "Wpisz odpowied\305\272", nullptr));
         submitAnswerButton->setText(QCoreApplication::translate("GameGUIClass", "Odpowiedz", nullptr));
-        labelFeedback->setText(QCoreApplication::translate("GameGUIClass", "Poprawnosc", nullptr));
+        labelFeedback->setText(QCoreApplication::translate("GameGUIClass", "Poprawno\305\233\304\207", nullptr));
         labelScore->setText(QCoreApplication::translate("GameGUIClass", "Wynik", nullptr));
         startQuizButton->setText(QCoreApplication::translate("GameGUIClass", "Start", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Quiz), QCoreApplication::translate("GameGUIClass", "Quiz", nullptr));

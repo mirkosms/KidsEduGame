@@ -23,7 +23,16 @@ GameGUI::GameGUI(QWidget* parent)
 void GameGUI::on_convert2DecimalClicked() {
     QString roman = ui->lineEditRoman->text();
     int decimal = converter.Roman2Dec(roman.toUpper().toStdString());
-    ui->labelDecimalResult->setText(decimal != -1 ? QString::number(decimal) : "Błąd!");
+
+    if (decimal == -1) {
+        ui->labelDecimalResult->setText("Błąd!"); // Nieprawidłowa liczba rzymska
+    }
+    else if (decimal == -2) {
+        ui->labelDecimalResult->setText("N/D"); // Liczba przekracza maksymalną wartość
+    }
+    else {
+        ui->labelDecimalResult->setText(QString::number(decimal)); // Poprawna konwersja
+    }
 }
 
 void GameGUI::on_convert2RomanClicked() {

@@ -64,12 +64,10 @@ bool RomanConverter::isValidRoman(const std::string& roman) {
     return true; // Liczba rzymska jest prawidłowa
 }
 
-
-
-
 int RomanConverter::Roman2Dec(const std::string& roman) {
+    // Sprawdzenie, czy liczba rzymska jest prawidłowa
     if (!isValidRoman(roman)) {
-        return -1;
+        return -1; // Nieprawidłowa liczba rzymska
     }
 
     int decimal = 0;
@@ -78,7 +76,7 @@ int RomanConverter::Roman2Dec(const std::string& roman) {
     for (size_t i = 0; i < roman.length(); i++) {
         int current_value = roman_map.at(roman[i]);
 
-        if (prev_value && prev_value < current_value) {
+        if (prev_value < current_value) {
             decimal += current_value - 2 * prev_value;
         }
         else {
@@ -87,6 +85,12 @@ int RomanConverter::Roman2Dec(const std::string& roman) {
         prev_value = current_value;
     }
 
+    // Sprawdzenie, czy liczba nie przekracza maksymalnej wartości dla systemu rzymskiego
+    if (decimal > 3999) {
+        return -2; // Liczba przekracza maksymalną wartość
+    }
+
     return decimal;
 }
+
 
