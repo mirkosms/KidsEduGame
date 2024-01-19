@@ -15,7 +15,6 @@ GameGUI::GameGUI(QWidget* parent)
     feedbackTimer->setInterval(3000); // Ustawienie interwału na 3000 ms (3 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
 
-    // Używamy nowszej składni do połączeń przycisków z ciekawostkami
     connect(ui->buttonShowGeneralFact, &QPushButton::clicked, this, &GameGUI::showRandomGeneralFact);
     connect(ui->buttonShowRomanFact, &QPushButton::clicked, this, &GameGUI::showRandomRomanNumeralFact);
 }
