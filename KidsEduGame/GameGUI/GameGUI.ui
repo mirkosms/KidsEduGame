@@ -6,22 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>751</width>
-    <height>542</height>
+    <width>862</width>
+    <height>591</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>GameGUI</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(234, 206, 169);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>60</x>
       <y>30</y>
-      <width>641</width>
-      <height>441</height>
+      <width>741</width>
+      <height>491</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="font">
      <font>
@@ -54,9 +72,9 @@
      <widget class="QLabel" name="labelQuestion">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>20</y>
-        <width>411</width>
+        <x>180</x>
+        <y>50</y>
+        <width>401</width>
         <height>31</height>
        </rect>
       </property>
@@ -66,14 +84,35 @@
         <underline>true</underline>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(170, 179, 160);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
       <property name="text">
-       <string>Pytanie</string>
+       <string>Pytanie - aby je zobaczyć kliknij Start</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="margin">
+       <number>1</number>
       </property>
      </widget>
      <widget class="QLineEdit" name="lineEditAnswer">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>300</x>
         <y>90</y>
         <width>151</width>
         <height>51</height>
@@ -86,6 +125,9 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
       <property name="placeholderText">
        <string>Wpisz odpowiedź</string>
       </property>
@@ -94,8 +136,8 @@
       <property name="geometry">
        <rect>
         <x>290</x>
-        <y>160</y>
-        <width>151</width>
+        <y>150</y>
+        <width>171</width>
         <height>61</height>
        </rect>
       </property>
@@ -105,6 +147,9 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 131, 6);</string>
+      </property>
       <property name="text">
        <string>Odpowiedz</string>
       </property>
@@ -112,9 +157,9 @@
      <widget class="QLabel" name="labelFeedback">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>240</y>
-        <width>161</width>
+        <x>290</x>
+        <y>210</y>
+        <width>171</width>
         <height>61</height>
        </rect>
       </property>
@@ -124,15 +169,24 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
       <property name="text">
        <string>Poprawność</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="margin">
+       <number>2</number>
       </property>
      </widget>
      <widget class="QLabel" name="labelScore">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>340</y>
+        <x>510</x>
+        <y>360</y>
         <width>201</width>
         <height>41</height>
        </rect>
@@ -143,8 +197,25 @@
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 152, 67);</string>
+       <string notr="true">color: rgb(255, 152, 67);
+background-color: rgb(241, 226, 201);
+border-color: rgb(89, 66, 39);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
       </property>
       <property name="text">
        <string>Wynik</string>
@@ -153,8 +224,8 @@
      <widget class="QPushButton" name="startQuizButton">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>120</y>
+        <x>330</x>
+        <y>320</y>
         <width>81</width>
         <height>61</height>
        </rect>
@@ -166,8 +237,8 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(92, 255, 67);
-</string>
+       <string notr="true">background-color: rgb(29, 79, 21);
+color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>Start</string>
@@ -179,6 +250,58 @@
        <bool>false</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="labelLogo">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>280</y>
+        <width>171</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/GameGUI/KidsEduGameLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelKEDb3">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>741</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/Background/KEGb3.png.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>labelKEDb3</zorder>
+     <zorder>labelQuestion</zorder>
+     <zorder>lineEditAnswer</zorder>
+     <zorder>submitAnswerButton</zorder>
+     <zorder>labelFeedback</zorder>
+     <zorder>labelScore</zorder>
+     <zorder>startQuizButton</zorder>
+     <zorder>labelLogo</zorder>
     </widget>
     <widget class="QWidget" name="Konwersja">
      <attribute name="title">
@@ -187,9 +310,9 @@
      <widget class="QLineEdit" name="lineEditRoman">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>40</y>
-        <width>201</width>
+        <x>150</x>
+        <y>90</y>
+        <width>191</width>
         <height>51</height>
        </rect>
       </property>
@@ -197,11 +320,14 @@
        <font>
         <family>Times New Roman</family>
         <pointsize>14</pointsize>
-        <bold>true</bold>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
       <property name="placeholderText">
        <string>Wpisz liczbę rzymską</string>
@@ -210,10 +336,10 @@
      <widget class="QPushButton" name="pushButtonConvert2Decimal">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>110</y>
+        <x>150</x>
+        <y>210</y>
         <width>211</width>
-        <height>81</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -224,6 +350,9 @@
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 131, 6);</string>
       </property>
       <property name="text">
        <string>Konwertuj na dziesiętne</string>
@@ -232,9 +361,9 @@
      <widget class="QLineEdit" name="lineEditDecimal">
       <property name="geometry">
        <rect>
-        <x>370</x>
-        <y>40</y>
-        <width>211</width>
+        <x>440</x>
+        <y>90</y>
+        <width>201</width>
         <height>51</height>
        </rect>
       </property>
@@ -242,8 +371,11 @@
        <font>
         <family>Times New Roman</family>
         <pointsize>14</pointsize>
-        <bold>true</bold>
+        <bold>false</bold>
        </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
       <property name="placeholderText">
        <string>Wpisz liczbę dziesiętną</string>
@@ -252,10 +384,10 @@
      <widget class="QPushButton" name="pushButtonConvert2Roman">
       <property name="geometry">
        <rect>
-        <x>370</x>
-        <y>110</y>
+        <x>420</x>
+        <y>210</y>
         <width>211</width>
-        <height>81</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -267,6 +399,9 @@
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 131, 6);</string>
+      </property>
       <property name="text">
        <string>Konwertuj na rzymskie</string>
       </property>
@@ -274,8 +409,8 @@
      <widget class="QLabel" name="labelRomanResult">
       <property name="geometry">
        <rect>
-        <x>388</x>
-        <y>240</y>
+        <x>450</x>
+        <y>300</y>
         <width>161</width>
         <height>71</height>
        </rect>
@@ -312,8 +447,8 @@
      <widget class="QLabel" name="labelDecimalResult">
       <property name="geometry">
        <rect>
-        <x>78</x>
-        <y>240</y>
+        <x>170</x>
+        <y>300</y>
         <width>161</width>
         <height>71</height>
        </rect>
@@ -347,19 +482,77 @@
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>360</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/GameGUI/KidsEduGameLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>751</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/Background/KEGb1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>lineEditDecimal</zorder>
+     <zorder>lineEditRoman</zorder>
+     <zorder>pushButtonConvert2Decimal</zorder>
+     <zorder>pushButtonConvert2Roman</zorder>
+     <zorder>labelRomanResult</zorder>
+     <zorder>labelDecimalResult</zorder>
+     <zorder>label_3</zorder>
     </widget>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="Facts">
      <attribute name="title">
       <string>Ciekawostki</string>
      </attribute>
      <widget class="QPushButton" name="buttonShowGeneralFact">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>80</y>
-        <width>151</width>
+        <x>20</x>
+        <y>50</y>
+        <width>181</width>
         <height>61</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="font">
        <font>
@@ -367,6 +560,9 @@
         <pointsize>15</pointsize>
         <bold>false</bold>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 131, 6);</string>
       </property>
       <property name="text">
        <string>Ogólne</string>
@@ -375,11 +571,17 @@
      <widget class="QPushButton" name="buttonShowRomanFact">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>80</y>
+        <x>20</x>
+        <y>150</y>
         <width>181</width>
         <height>61</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="font">
        <font>
@@ -388,18 +590,30 @@
         <bold>false</bold>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(194, 131, 6);</string>
+      </property>
       <property name="text">
        <string>Historyczne</string>
       </property>
      </widget>
      <widget class="QLabel" name="labelFactsDisplay">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>200</y>
-        <width>351</width>
-        <height>91</height>
+        <x>360</x>
+        <y>140</y>
+        <width>221</width>
+        <height>191</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="font">
        <font>
@@ -413,15 +627,70 @@
        <enum>QFrame::Raised</enum>
       </property>
       <property name="text">
-       <string>Tekst ciekawostki</string>
+       <string>Wybierz kategorię a pojawi się ciekawostka</string>
       </property>
       <property name="textFormat">
        <enum>Qt::AutoText</enum>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
       <property name="wordWrap">
        <bool>true</bool>
       </property>
+      <property name="margin">
+       <number>1</number>
+      </property>
      </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>941</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/Background/KEGb2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelFactsL">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>270</y>
+        <width>211</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="GameGUI.qrc">:/GameGUI/KidsEduGameLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>buttonShowGeneralFact</zorder>
+     <zorder>buttonShowRomanFact</zorder>
+     <zorder>labelFactsDisplay</zorder>
+     <zorder>labelFactsL</zorder>
     </widget>
    </widget>
   </widget>
@@ -430,7 +699,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>751</width>
+     <width>862</width>
      <height>22</height>
     </rect>
    </property>

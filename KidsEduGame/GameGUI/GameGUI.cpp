@@ -12,7 +12,7 @@ GameGUI::GameGUI(QWidget* parent)
     connect(ui->submitAnswerButton, &QPushButton::clicked, this, &GameGUI::on_submitAnswerButton_clicked);
 
     feedbackTimer = new QTimer(this);
-    feedbackTimer->setInterval(3000); // Ustawienie interwału na 5000 ms (5 sekund)
+    feedbackTimer->setInterval(3000); // Ustawienie interwału na 3000 ms (3 sekund)
     connect(feedbackTimer, &QTimer::timeout, this, &GameGUI::proceedToNextQuestion);
 
     // Używamy nowszej składni do połączeń przycisków z ciekawostkami

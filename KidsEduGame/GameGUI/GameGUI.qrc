@@ -1,4 +1,13 @@
 <RCC>
-    <qresource prefix="GameGUI">
-    </qresource>
+  <qresource prefix="GameGUI">
+    <file>KidsEduGameLogo.png</file>
+  </qresource>
+  <qresource prefix="Icon">
+    <file>KEGlogo.ico</file>
+  </qresource>
+  <qresource prefix="Background">
+    <file>KEGb2.png</file>
+    <file>KEGb1.png</file>
+    <file>KEGb3.png.png</file>
+  </qresource>
 </RCC>

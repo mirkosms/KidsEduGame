@@ -16,52 +16,41 @@ bool RomanConverter::isValidRoman(const std::string& roman) {
     };
 
     int last_value = 0;
+    int second_last_value = 0;
     char last_char = '\0';
     int repeat_count = 0;
 
     for (size_t i = 0; i < roman.size(); ++i) {
         char current_char = roman[i];
-
-        // Sprawdzenie, czy znak jest prawidłowym znakiem rzymskim
         if (values.find(current_char) == values.end()) {
-            return false; // Nieprawidłowy znak
+            return false;
         }
 
         int current_value = values[current_char];
-
-        // Sprawdzenie powtórzeń
         if (current_char == last_char) {
             repeat_count++;
             if (repeat_count > 3 || (current_char == 'V' || current_char == 'L' || current_char == 'D')) {
-                return false; // Znak 'V', 'L', 'D' nie może się powtarzać, inne maksymalnie 3 razy
+                return false;
             }
         } else {
             repeat_count = 1;
         }
 
-        // Sprawdzenie subtrakcji
         if (last_value < current_value) {
-            // Subtrakcja jest dozwolona tylko w przypadku, gdy ostatni znak był 'I', 'X', lub 'C'
-            if (last_value != 0 && (current_value > last_value * 10 || last_char != 'I' && last_char != 'X' && last_char != 'C')) {
-                return false; // Nieprawidłowa subtrakcja
+            if (last_value != 0 && (current_value > last_value * 10 || (last_char != 'I' && last_char != 'X' && last_char != 'C'))) {
+                return false;
             }
-            // Sprawdzenie, czy nie jest to wielokrotna subtrakcja (np. 'IIX')
-            if (i > 1 && values[roman[i - 2]] < current_value) {
-            return false; // Nieprawidłowe wielokrotne odejmowanie
+            if (second_last_value >= current_value) {
+                return false;
             }
-            }
-                last_char = current_char; // Aktualizacja ostatniego znaku
-                last_value = current_value; // Aktualizacja ostatniej wartości
-            }
+        }
 
-            // Dodatkowe sprawdzenie na koniec, czy ostatni znak nie jest nieprawidłową subtrakcją
-            if (roman.size() > 1 && values[roman[roman.size() - 2]] < values[roman.back()]) {
-                if (roman[roman.size() - 2] != 'I' && roman[roman.size() - 2] != 'X' && roman[roman.size() - 2] != 'C') {
-                    return false; // Nieprawidłowa subtrakcja na końcu ciągu
-                }
-            }
+        second_last_value = last_value;
+        last_char = current_char;
+        last_value = current_value;
+    }
 
-    return true; // Liczba rzymska jest prawidłowa
+    return true;
 }
 
 int RomanConverter::Roman2Dec(const std::string& roman) {

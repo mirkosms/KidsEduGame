@@ -38,6 +38,10 @@ TEST(TestConvertDecimal_2_Roman, TestInvalidCombinations) {
     EXPECT_NE(ConvertDecimal_2_Roman(4), "IIII"); // Nieprawid³owa repetycja
     EXPECT_NE(ConvertDecimal_2_Roman(99), "IC"); // Nieprawid³owa subtrakcja
     EXPECT_NE(ConvertDecimal_2_Roman(1114), "MCIVX"); // Nieistniej¹ca liczba
+    EXPECT_NE(ConvertDecimal_2_Roman(8), "IVIV");  // Nieistniej¹ca liczba
+    EXPECT_NE(ConvertDecimal_2_Roman(19), "IXX");  // Nieistniej¹ca liczba
+    EXPECT_NE(ConvertDecimal_2_Roman(2700), "CMCMCM");  // Nieistniej¹ca liczba
+
 }
 
 // Krawêdziowe przypadki
@@ -52,7 +56,7 @@ TEST(TestConvertDecimal_2_Roman, TestEdgeCases) {
 TEST(TestConvertDecimal_2_Roman, TestGeneralAndUnspecifiedExceptions) {
     EXPECT_EQ(ConvertDecimal_2_Roman(1066), "MLXVI"); // Rok bitwy pod Hastings
     EXPECT_EQ(ConvertDecimal_2_Roman(1492), "MCDXCII"); // Rok odkrycia Ameryki przez Kolumba
-    EXPECT_EQ(ConvertDecimal_2_Roman(1114), "MCXIV");
+    EXPECT_EQ(ConvertDecimal_2_Roman(1114), "MCXIV"); // Rok bitwy pod Martorell
     EXPECT_EQ(ConvertDecimal_2_Roman(1023), "MXXIII"); // Liczba w zakresie
     EXPECT_EQ(ConvertDecimal_2_Roman(4000), "N/D"); // Liczba poza zakresem
 }
