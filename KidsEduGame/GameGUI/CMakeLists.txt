@@ -10,7 +10,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # Znajdowanie pakietów Qt6 wymaganych dla projektu
-find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets SerialPort REQUIRED)
 
 # Dodawanie katalogów z nagłówkami
 include_directories(../include ../GameGUI)
@@ -32,4 +32,4 @@ set(PROJECT_RESOURCES
 add_executable(GameGUI ${PROJECT_SOURCES} ${PROJECT_UI} ${PROJECT_RESOURCES})
 
 # Linkowanie projektu z bibliotekami Qt
-target_link_libraries(GameGUI GameCoreLib Qt6::Core Qt6::Gui Qt6::Widgets)
+target_link_libraries(GameGUI GameCoreLib Qt6::Core Qt6::Gui Qt6::Widgets Qt6::SerialPort)

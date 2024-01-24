@@ -1,4 +1,8 @@
 #include "GameGUI.h"
+#include <QSerialPort>
+
+// W klasie GameGUI
+QSerialPort* serial;
 
 GameGUI::GameGUI(QWidget* parent)
     : QMainWindow(parent)
@@ -17,6 +21,34 @@ GameGUI::GameGUI(QWidget* parent)
 
     connect(ui->buttonShowGeneralFact, &QPushButton::clicked, this, &GameGUI::showRandomGeneralFact);
     connect(ui->buttonShowRomanFact, &QPushButton::clicked, this, &GameGUI::showRandomRomanNumeralFact);
+
+    serial = new QSerialPort(this);
+    serial->setPortName("COM9"); // Zmienić na odpowiedni port
+    serial->setBaudRate(28800);
+    serial->setDataBits(QSerialPort::Data8);
+    serial->setParity(QSerialPort::NoParity);
+    serial->setStopBits(QSerialPort::OneStop);
+    serial->setFlowControl(QSerialPort::NoFlowControl);
+    //serial->open(QIODevice::ReadWrite);
+    if (!serial->open(QIODevice::ReadWrite)) {
+        // Obsługa błędu, jeśli port się nie otworzy
+    }
+
+    connect(serial, &QSerialPort::readyRead, this, &GameGUI::readFromPort);
+}
+
+void GameGUI::readFromPort() {
+    QByteArray data = serial->readAll();
+    QString receivedData = QString::fromUtf8(data).trimmed(); // Zakładamy kodowanie ASCII
+
+    if (!receivedData.isEmpty()) {
+        // Wprowadzanie danych do aktywnego pola tekstowego
+        QWidget* focusedWidget = QApplication::focusWidget();
+        QLineEdit* lineEdit = dynamic_cast<QLineEdit*>(focusedWidget);
+        if (lineEdit) {
+            lineEdit->insert(receivedData); // Wstawia otrzymane dane do aktywnego pola tekstowego
+        }
+    }
 }
 
 void GameGUI::on_convert2DecimalClicked() {
@@ -114,5 +146,8 @@ void GameGUI::showRandomRomanNumeralFact() {
 
 GameGUI::~GameGUI()
 {
+    if (serial->isOpen())
+        serial->close();
+    delete serial;
     delete ui;
 }

@@ -303,6 +303,9 @@ Qt6GuiTools_DIR:PATH=C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6GuiTools
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6SerialPort.
+Qt6SerialPort_DIR:PATH=Qt6SerialPort_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=C:/Qt/6.6.1/msvc2019_64/lib/cmake/Qt6WidgetsTools
 
@@ -453,7 +456,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

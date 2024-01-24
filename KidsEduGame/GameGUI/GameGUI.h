@@ -6,6 +6,7 @@
 #include "Menu.h"
 #include "Facts.h"
 #include <QTimer>
+#include <QSerialPort> // Dołączenie QSerialPort
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GameGUIClass; };
@@ -25,6 +26,7 @@ private:
     Quiz quiz;
     Facts facts;
     QTimer* feedbackTimer;
+    QSerialPort* serial; // Dodanie instancji QSerialPort
 
 private slots:
     void on_convert2DecimalClicked();
@@ -36,4 +38,5 @@ private slots:
     void updateScoreDisplay();
     void showRandomGeneralFact();
     void showRandomRomanNumeralFact();
+    void readFromPort(); // Metoda do odczytu danych z portu
 };
